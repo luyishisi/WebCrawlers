@@ -5,6 +5,7 @@ from scrapy.selector import Selector
 from scrapy.contrib.loader import ItemLoader, Identity
 from meizitu.items import MeizituItem
 
+
 class MeiziSpider(scrapy.Spider):
     name = "meizi"
     allowed_domains = ["meizitu.com"]
@@ -40,5 +41,5 @@ class MeiziSpider(scrapy.Spider):
         l.add_xpath('image_urls', "//div[@id='picture']/p/img/@src", Identity())
         #url
         l.add_value('url', response.url)
-        
+
         return l.load_item()
