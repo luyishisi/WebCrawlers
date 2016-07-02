@@ -13,7 +13,9 @@ BOT_NAME = 'meizitu'
 SPIDER_MODULES = ['meizitu.spiders']
 NEWSPIDER_MODULE = 'meizitu.spiders'
 #载入ImageDownLoadPipeline类
-ITEM_PIPELINES = {'meizitu.pipelines.ImageDownloadPipeline': 1}
+#为了启用一个Item Pipeline组件，你必须将它的类添加到 ITEM_PIPELINES 配置
+#分配给每个类的整型值，确定了他们运行的顺序，item按数字从低到高的顺序，通过pipeline，
+TEM_PIPELINES = {'meizitu.pipelines.ImageDownloadPipeline': 1}
 #图片储存
 IMAGES_STORE = '.'
 

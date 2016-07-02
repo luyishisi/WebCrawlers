@@ -9,8 +9,7 @@ import scrapy
 
 
 class MeizituItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+    #定义item对象,包含如下
     url = scrapy.Field()
     name = scrapy.Field()
     tags = scrapy.Field()
