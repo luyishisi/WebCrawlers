@@ -6,6 +6,7 @@ from pbdnof58.items import Pbdnof58Loader
 class Myspider(RedisSpider):
     '''spider that reads urls from redis queue (myspider:start_urls).'''
     name = 'myspider_58'
+    #设定redis的key，你可以在redis客户端用llen myspider:start_urls 来查看队列
     redis_key = 'myspider:start_urls'
     download_delay = 1
     def __init__(self, *args, **kwargs):
@@ -15,13 +16,12 @@ class Myspider(RedisSpider):
 
 
     def parse(self, response):
-
+        #如果你运行不出结果就在这里重写xpath，
         el = Pbdnof58Loader(response=response)
         el.add_xpath('title', '//h1/text()')
         el.add_xpath('price', '//span[contains(@class, "price c_f50")]/text()'.strip())
         quality = response.xpath('//ul[contains(@class, "suUl")]/li')
         quality = quality[1].xpath('div[contains(@class, "su_con")]/span/text()').extract()[0].strip()
-#        quality = '9'
         el.add_value('quality', quality)
         area = response.xpath('//span[contains(@class, "c_25d")]/a/text()'.strip())
         if area == []:

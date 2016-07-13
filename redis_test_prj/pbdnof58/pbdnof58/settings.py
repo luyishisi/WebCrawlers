@@ -91,6 +91,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # start MySQL database configure setting
+#设定数据库 这部分现在改写为json后就没有用处了。
 MYSQL_HOST = 'localhost'
 MYSQL_DBNAME = 'qcl'
 MYSQL_USER = 'root'

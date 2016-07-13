@@ -1,3 +1,4 @@
+#coding:utf-8
 import json
 import codecs
 from scrapy.exceptions import DropItem
@@ -5,6 +6,7 @@ from twisted.enterprise import adbapi
 import MySQLdb
 import MySQLdb.cursors
 from scrapy import log
+#这里改写了保存方式，
 class CleanPipeline(object):
 
     def __init__(self):
@@ -19,6 +21,7 @@ class CleanPipeline(object):
                 return item
 
 
+#原本是mysql数据库的，现在简单修改为json文件，
 
 class MySQLPipeline(object):
 
