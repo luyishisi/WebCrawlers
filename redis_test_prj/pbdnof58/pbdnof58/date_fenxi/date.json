@@ -1,3 +1,4 @@
+[
 {"price": "700", "area": "惠州-惠城", "quality": "quality", "title": "ipad1,九成新"},
 {"price": "800", "area": "广州-天河", "quality": "quality", "title": "原道W11C平板电脑"},
 {"price": "245", "area": "无锡-惠山", "quality": "quality", "title": "平板电脑"},
@@ -531,9 +532,9 @@
 {"price": "1300", "area": "廊坊-广阳", "quality": "quality", "title": "iPad3，32G，白色 功能一切正常"},
 {"price": "650", "area": "深圳-龙岗区", "quality": "quality", "title": "转让自用win10平板64G"},
 {"price": "300", "area": "广州-白云", "quality": "quality", "title": "三星7寸平板"},
-{"price": "40", "area": "济南-历城", "quality": "quality", "title": "平板，尸体机开不},机，具体原因不清楚，当配件卖"}
-{"price": "399", "area": "无锡-锡山", "quality": "quality", "title": "平板电脑    在后宅     要自己拿"},
-{"price": "2800", "area": "深圳-福田", "quality": "quality", "title": "9成新ipad    Air2   64G  白色，要的M啦。"},
+{"price": "40", "area": "济南-历城", "quality": "quality", "title": "平板，尸体机开不机，具体原因不清楚，当配件卖"},
+{"price": "399", "area": "无锡-锡山", "quality": "quality", "title": "平板电脑在后宅要自己拿"},
+{"price": "2800", "area": "深圳-福田", "quality": "quality", "title": "9成新ipadAir264G白色，要的啦。"},
 {"price": "2600", "area": "厦门-翔安", "quality": "quality", "title": "现在有点困难只能把它卖了"},
 {"price": "2288", "area": "上海-闵行", "quality": "quality", "title": "全新未拆封ipad Air (3G )版 型号MD794 支持联通高速3G网络以及电信3G网络，内置GPS模块可做导航使用，"},
 {"price": "800", "area": "广州-白云", "quality": "quality", "title": "求购小米平板一代64g的，价格洽谈！要出的联系！谢谢"},
@@ -609,7 +610,7 @@
 {"price": "1850", "area": "上海-浦东", "quality": "quality", "title": "国行99新 ipad air 32g"},
 {"price": "699", "area": "佛山-顺德", "quality": "quality", "title": "双系统平板电脑闲置转让"},
 {"price": "5299", "area": "广州-越秀", "quality": "quality", "title": "港行金色ipad pro"},
-{"price": "1899", "area": "乌鲁木齐-米东区", "quality": "quality", "title": "苹果平板电脑  ipad  Air  「wifi版」16G-"},
+{"price": "1899", "area": "乌鲁木齐-米东区", "quality": "quality", "title": "苹果平板电脑  pad  Air  「wifi版」16G-"},
 {"price": "2000", "area": "衢州-江山", "quality": "quality", "title": "ipad3"},
 {"price": "1600", "area": "保定-保定周边", "quality": "quality", "title": "自用iPad mini3"},
 {"price": "2300", "area": "常州-新北", "quality": "quality", "title": "iPad Air 64G 国行"},
@@ -2212,7 +2213,7 @@
 {"price": "1000", "area": "鄂尔多斯-东胜", "quality": "quality", "title": "e人e本"},
 {"price": "300", "area": "扬州-邗江", "quality": "quality", "title": "台电 p70 7寸高清平板 移动联通双4g 全新未拆封带发票"},
 {"price": "1160", "area": "无锡-北塘", "quality": "quality", "title": "出售闲置ipad3"},
-{"price": "1400", "area": "郑州-金水", "quality": "quality", "title": "第一次发 怎么这还要起名字O__O"…"},
+{"price": "1400", "area": "郑州-金水", "quality": "quality", "title": "第一次发 怎么这还要起名字O__O"},
 {"price": "2400", "area": "唐山-其他", "quality": "quality", "title": "apid. Air2"},
 {"price": "120", "area": "苏州-工业园", "quality": "quality", "title": "台电平板只要120"},
 {"price": "2500", "area": "拉萨-城关", "quality": "quality", "title": "全新ipad"},
@@ -3215,4 +3216,5 @@
 {"price": "700", "area": "杭州-江干", "quality": "quality", "title": "ipad2行货，16G，老人看电视首选，原装充电器完好，9成新700转"},
 {"price": "8200", "area": "杭州-滨江", "quality": "quality", "title": "转让国行surface pro 4一台"},
 {"price": "1300", "area": "杭州-滨江", "quality": "quality", "title": "95新ipadmini2国行16G转让"},
-{"price": "1750", "area": "杭州-江干", "quality": "quality", "title": "国行iPad mini2 白32G版Wi-Fi 在保"},
+{"price": "1750", "area": "杭州-江干", "quality": "quality", "title": "国行iPad mini2 白32G版Wi-Fi 在保"}
+]

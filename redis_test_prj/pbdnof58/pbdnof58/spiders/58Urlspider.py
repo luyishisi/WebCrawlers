@@ -1,3 +1,4 @@
+#coding:utf-8
 from scrapy_redis.spiders import RedisSpider
 from pbdnof58.items import Pbdnof58Loader
 from redis import Redis
