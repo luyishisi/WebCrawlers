@@ -1,0 +1,11 @@
+分布式改编的一个小项目，是抓取小说网的大量页面的文章
+需要redis，
+redis-server
+在redis-cli中增加起始页面
+lpush myspider:58_urls http://xxgege.net/xscs/index.html
+然后启动爬虫1，抓取22页面并且捕捉每个页面的60个单个url再由爬虫2进一步去抓取内容
+scrapy crawl myspider_58page
+scrapy crawl myspider_58
+就会将采集的数据放到urlteam.json中，如果你抓不成功可以看看我的数据，
+
+
