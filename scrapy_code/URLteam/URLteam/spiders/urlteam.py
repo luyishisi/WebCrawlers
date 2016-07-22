@@ -39,5 +39,3 @@ class URLteamSpider(Spider):
         for url in urls:
             print url
             yield Request(url, callback=self.parse)
-
-
