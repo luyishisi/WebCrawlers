@@ -15,9 +15,14 @@ NEWSPIDER_MODULE = 'URLteam.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'urlteam (+http://www.yourdomain.com)'
-#禁止cookies,防止被ban  
-COOKIES_ENABLED = False  
-  
-ITEM_PIPELINES = {  
-    'URLteam.pipelines.UrlteamPipeline':300  
-}  
+#禁止cookies,防止被ban
+COOKIES_ENABLED = False
+
+ITEM_PIPELINES = {
+    'URLteam.pipelines.UrlteamPipeline':300
+}
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    'URLteam.middlewares.ProxyMiddleware': 100,
+}
