@@ -23,6 +23,6 @@ ITEM_PIPELINES = {
 }
 
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
-    'URLteam.middlewares.ProxyMiddleware': 100,
+    #'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    #'URLteam.middlewares.ProxyMiddleware': 100,
 }
