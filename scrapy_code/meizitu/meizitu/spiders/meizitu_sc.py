@@ -41,5 +41,5 @@ class MeiziSpider(scrapy.Spider):
         l.add_xpath('image_urls', "//div[@id='picture']/p/img/@src", Identity())
         #url
         l.add_value('url', response.url)
-
+        #print l.load_item()
         return l.load_item()

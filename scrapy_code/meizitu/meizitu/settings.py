@@ -15,9 +15,12 @@ NEWSPIDER_MODULE = 'meizitu.spiders'
 #载入ImageDownLoadPipeline类
 #为了启用一个Item Pipeline组件，你必须将它的类添加到 ITEM_PIPELINES 配置
 #分配给每个类的整型值，确定了他们运行的顺序，item按数字从低到高的顺序，通过pipeline，
-TEM_PIPELINES = {'meizitu.pipelines.ImageDownloadPipeline': 1}
+TEM_PIPELINES = {
+'meizitu.pipelines.ImageDownloadPipeline': 2
+}
 #图片储存
-IMAGES_STORE = '.'
+IMAGES_STORE = './'
+#IMAGES_STORE = '/home/'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'meizitu (+http://www.yourdomain.com)'
