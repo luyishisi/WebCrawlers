@@ -31,7 +31,7 @@ def list_img_url(url):
 def get_big_img_url():
     for i in range(100):
         try:
-            num = 5200+i;
+            num = 4900+i;
             url ='http://www.meizitu.com/a/'+ str(num) +'.html'
             img_url = requests.get(url,timeout = 50)
             img_url_list = re.findall('http://pic.meizitu.com/wp-content/uploads/2016a/.*.jpg',img_url.text)
