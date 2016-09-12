@@ -3,7 +3,7 @@
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.selector import Selector
-from CSDNBlogCrawlSpider.items import CsdnblogcrawlspiderItem
+#from CSDNBlogCrawlSpider.items import CsdnblogcrawlspiderItem
 
 
 class CSDNBlogCrawlSpider(CrawlSpider):
@@ -51,4 +51,3 @@ class CSDNBlogCrawlSpider(CrawlSpider):
         item['blog_url'] = blog_url.encode('utf-8')
 
         yield item
-

@@ -19,19 +19,23 @@ class MeiziSpider(scrapy.Spider):
         #每个连接，用@href属性
         for link in sel.xpath('//h2/a/@href').extract():
             #请求=Request(连接，parese_item)
+            print link
             request = scrapy.Request(link, callback=self.parse_item)
             yield request#返回请求
         #获取页码集合
         pages = sel.xpath('//*[@id="wp_page_numbers"]/ul/li/a/@href').extract()
         print('pages: %s' % pages)#打印页码
-        if len(pages) > 2:#如果页码集合>2
-            page_link = pages[-2]#图片连接=读取页码集合的倒数第二个页码
+        for page in pages:
+        #if len(pages) > 2:#如果页码集合>2
+            page_link = page
             page_link = page_link.replace('/a/', '')#图片连接=page_link（a替换成空）
+            print 'page_link',page_link
             request = scrapy.Request('http://www.meizitu.com/a/%s' % page_link, callback=self.parse)
             yield request#返回请求
 
     def parse_item(self, response):
         #l=用ItemLoader载入MeizituItem()
+        re  =  []
         l = ItemLoader(item=MeizituItem(), response=response)
         #名字
         l.add_xpath('name', '//h2/a/text()')
@@ -41,5 +45,7 @@ class MeiziSpider(scrapy.Spider):
         l.add_xpath('image_urls', "//div[@id='picture']/p/img/@src", Identity())
         #url
         l.add_value('url', response.url)
-        #print l.load_item()
+        re.append(l.load_item())
+        print re
+        #return re
         return l.load_item()

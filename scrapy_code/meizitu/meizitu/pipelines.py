@@ -5,9 +5,10 @@ import requests
 from meizitu import settings
 import os
 
-
 class ImageDownloadPipeline(object):
     def process_item(self, item, spider):
+    #def process_item( item, spider):
+        print "*************************************"
         if 'image_urls' in item:#如果‘图片地址’在项目中
             images = []#定义图片空集
             dir_path = '%s/%s' % (settings.IMAGES_STORE, spider.name)
@@ -33,7 +34,6 @@ class ImageDownloadPipeline(object):
                         #获取的流如果有不存在的,则使用break结束,如果没有一次结束则进行写入
                         if not block:
                             break
-
                         handle.write(block)
 
             item['images'] = images
