@@ -17,6 +17,7 @@ def download(url):
         f.close()
     except Exception,e:
         print Exception,":",e
+        return -1
 
 def list_img_url(url):
     try:
@@ -35,7 +36,9 @@ def get_big_img_url():
     while(1):
         try:
             url = r.lpop('meizitu')
-            download(url)
+            return_1 = download(url)
+            if return_1 == -1:
+                return -1
             time.sleep(1)
             print url
         except:
@@ -67,5 +70,13 @@ def push_redis_list(num):
 if __name__ == '__main__':
     url = 'http://www.meizitu.com/a/list_1_'
     print "begin"
-    push_redis_list(5300)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
-    #get_big_img_url()#开启则运行爬取任务
+    push_redis_list(4100)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
+    get_big_img_url()#开启则运行爬取任务
+    push_redis_list(4500)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
+    get_big_img_url()#开启则运行爬取任务
+    push_redis_list(4400)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
+    get_big_img_url()#开启则运行爬取任务
+    push_redis_list(4300)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
+    get_big_img_url()#开启则运行爬取任务
+    push_redis_list(4200)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
+    get_big_img_url()#开启则运行爬取任务
